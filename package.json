@@ -31,7 +31,8 @@
     "build:demo": "cd demo && npm run build",
     "build:lib": "vite build && vue-tsc -p tsconfig.build.json",
     "preview": "cd demo && npm run preview",
-    "lint": "eslint --ext .js,.vue ."
+    "lint": "eslint --ext .js,.vue .",
+    "prepare": "npm run build:lib"
   },
   "postcss": {
     "plugins": {
